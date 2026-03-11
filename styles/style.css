@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,4 +51,269 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 1140px;
+  height: 534px;
+  margin: 133px 30px;
+  gap: 30px;
+}
+
+.result {
+
+}
+
+.result__video-container {
+  width: 711px;
+  height: 388px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 100%;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+  border: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 225px;
+  height: 27px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color:  #1b1919; /* можно ли использовать transparent?*/
+  margin: 7.5px 0 2.5px 0;
+  padding: 2.5px 0;
+  appearance: none;
+}
+
+.search-form__textfield::placeholder{
+  color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.search-form__label-text {
+
+}
+
+.button {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  font-family: 'Fira Sans Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  background-color: #1b1919;
+  border: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  padding-left: 72.5px;
+  padding-right: 72.5px;
+  align-self: flex-end;
+  margin-bottom: 3px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  gap: 26px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  font-style: normal;
+  line-height: 94%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.content__accent:first-child {
+  color: #545050;
+}
+
+.content__list-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+  gap: 30px;
+  padding-left: 2px;
+  margin-right: 3px;
+  max-height: 298px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.preloader-template {
+
+}
+
+.preloader {
+
+}
+
+.preloader-chasing-squares {
+
+}
+
+.square {
+
+}
+
+.cards-list-item-template {
+
+}
+
+.content__list-item {
+
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: 'Oswald', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  /* line-height: 16.2px; зачем об этом указано в тз? специальная ошибка от дизайнера?
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 2; */
+}
+
+.content__video-card-thumbnail {
+  height: 103px;
+  min-width: 194px;
+  object-fit: cover;
+  object-position: top right;
+}
+
+.more-button-template {
+
+}
+
+.more-button {
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+}
+
+.error-template {
+
+}
+
+.error {
+
+}
+
+.error__title {
+
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
